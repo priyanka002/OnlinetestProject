@@ -12,6 +12,7 @@ public class TC_01 extends BaseTest{
 		
 		Empdata e=new Empdata(driver);
 		e.validation();
+	
 		
 	}
 	

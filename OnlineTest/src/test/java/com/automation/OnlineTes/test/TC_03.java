@@ -7,10 +7,12 @@ import com.automationpractice.core.BaseTest;
 
 public class TC_03 extends BaseTest {
 
-	@Test(enabled=true)
+	@Test(priority=1,enabled=true)
 	public void TC03(){
 		
 		Empdata e= new Empdata(driver);
 		e.addEmp();
+		e.deleteemp();
+		
 	}
 }

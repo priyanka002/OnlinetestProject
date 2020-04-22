@@ -38,7 +38,7 @@ public class BasePage {
 
 	protected void click(By locator) {
 		
-		wait.until(ExpectedConditions.elementToBeClickable(locator));
+		//wait.until(ExpectedConditions.elementToBeClickable(locator));
 		getElement(locator).click();
 	}
     protected void clear(By locator) {
