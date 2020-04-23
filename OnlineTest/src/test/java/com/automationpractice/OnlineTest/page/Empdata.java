@@ -69,7 +69,7 @@ public class Empdata extends BasePage {
 
 				click(btnaddemp);
 				Thread.sleep(2000);
-
+				
 				String firstname = reader.getCellData("AddEmp", "First Name", rowNum);
 				System.out.println(firstname);
 
@@ -170,14 +170,53 @@ public class Empdata extends BasePage {
 	
 	public void confirmAdvertisement(){
 		
-		boolean str=driver.findElement(By.xpath("//div[@class='advertisement']")).isDisplayed();
-		if (str == true)
-		   {
-		    System.out.print("Element Is Present On The Page");
-		   }
-		   else
-		   {
-		    System.out.print("Element Is Not Present On The Page");
-		   }	
+		
+		try {
+
+			ExcelLib reader = new ExcelLib("/Users/ADMIN/git/OnlinetestProject/OnlineTest/testdata.xlsx");
+			int rowCount = reader.getRowCount("AddEmp");
+
+				for(int rowNum = 2; rowNum <=3; rowNum++){
+					
+					click(btnaddemp);
+					Thread.sleep(2000);
+					String firstname = reader.getCellData("AddEmp", "First Name", rowNum);
+					System.out.println(firstname);
+
+					String lastname = reader.getCellData("AddEmp", "Last Name", rowNum);
+					System.out.println(lastname);
+
+					String drptitle = reader.getCellData("AddEmp", "Job title", rowNum);
+					System.out.println(drptitle);
+
+					String drpproject = reader.getCellData("AddEmp", "Current Project", rowNum);
+					System.out.println(drpproject);
+
+					driver.findElement(By.id("firstName")).sendKeys(firstname);
+
+					driver.findElement(By.id("lastName")).sendKeys(lastname);
+
+					Select select = new Select(driver.findElement(By.id("title")));
+					select.selectByVisibleText(drptitle);
+
+					Select select1 = new Select(driver.findElement(By.id("project")));
+					select1.selectByVisibleText(drpproject);
+					click(btnsubmit);
+				}
+				
+				boolean str=driver.findElement(By.xpath("//div[@class='advertisement']")).isDisplayed();
+				if (str == true)
+				   {
+				    System.out.print("Advertisement appeared");
+				   }
+				   else
+				   {
+				    System.out.print("Advertisement does not appear");
+				   }	
+
+		} catch (Exception e) {
+
+			System.err.println("Exception found" + e);
+		}
 	}
 }
