@@ -154,6 +154,7 @@ public class Empdata extends BasePage {
 
 		try {
 			click(btndlt);
+			Thread.sleep(1000);
 			driver.switchTo().alert().accept();
 			Thread.sleep(2500);
 

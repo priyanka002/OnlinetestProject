@@ -40,9 +40,4 @@ public class BaseTestExtentReportListener {
 		driver().get(url);
 	}
 
-	/*protected <T extends BasePage> T getPageObject(Class<T> class1) {
-
-		return PageFactory.initElements(driver(), class1);
-	}
-*/
 }

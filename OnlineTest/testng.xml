@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Suite" parallel="tests">
+  <test name="Test1">
+	 <classes>
+	   <class name="com.automation.OnlineTes.test.TC_01"/>
+	 </classes>
+   </test>
+   
+   
+   <test name="Test2">
+	 <classes>
+	   <class name="com.automation.OnlineTes.test.TC_02"/>
+	 </classes>
+   </test>
+   
+   <test name="Test3">
+	 <classes>
+	   <class name="com.automation.OnlineTes.test.TC_03"/>
+	 </classes>
+   </test>
+   
+   <test name="Test4">
+	 <classes>
+	   <class name="com.automation.OnlineTes.test.TC_04"/>
+	 </classes>
+   </test>
+   
+</suite> <!-- Suite -->

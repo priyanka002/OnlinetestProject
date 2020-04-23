@@ -21,7 +21,6 @@ public class BasePage {
 
 	public BasePage(WebDriver driver) {
 		this.driver = driver;
-		//this.wait = new WebDriverWait(this.driver, Constants.EXPLICIT_TIMEOUT);
 	}
 
 	public String getPageUrl() {
