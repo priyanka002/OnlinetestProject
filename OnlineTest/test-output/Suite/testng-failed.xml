@@ -1,21 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
-  <test name="Test1">
-    <classes>
-      <class name="com.automation.OnlineTes.test.TC_01"/>
-    </classes>
-  </test> <!-- Test1 -->
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="com.automationpractice.extentreport.ListenerTestNG"/>
+  </listeners>
   <test name="Test2">
     <classes>
       <class name="com.automation.OnlineTes.test.TC_02"/>
     </classes>
   </test> <!-- Test2 -->
-  <test name="Test3">
-    <classes>
-      <class name="com.automation.OnlineTes.test.TC_03"/>
-    </classes>
-  </test> <!-- Test3 -->
   <test name="Test4">
     <classes>
       <class name="com.automation.OnlineTes.test.TC_04"/>

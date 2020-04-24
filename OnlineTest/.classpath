@@ -53,5 +53,14 @@
 	<classpathentry kind="lib" path="G:/poi-4.1.2/poi-scratchpad-4.1.2.jar"/>
 	<classpathentry kind="lib" path="G:/poi-4.1.2/ooxml-lib/curvesapi-1.06.jar"/>
 	<classpathentry kind="lib" path="G:/poi-4.1.2/ooxml-lib/xmlbeans-3.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ADMIN/.m2/repository/com/relevantcodes/extentreports/2.40.2/extentreports-2.40.2.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="com.relevantcodes"/>
+			<attribute name="maven.artifactId" value="extentreports"/>
+			<attribute name="maven.version" value="2.40.2"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

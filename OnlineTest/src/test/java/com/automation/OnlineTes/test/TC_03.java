@@ -13,7 +13,6 @@ public class TC_03 extends BaseTest {
 		Empdata e= new Empdata(driver);
 		logger = extent.createTest("To verify add employee and delete specific employee");
 		e.addEmp();
-		e.deleteemp();
-		
+		e.deleteemp();		
 	}
 }
